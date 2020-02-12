@@ -1,0 +1,159 @@
+﻿@page
+@model LastApp.Ppages.PortfolioModel
+@{
+    ViewData["Title"]= "Porfolio";
+}
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+<!-- ========================== CSS BLOCK ======================= ----->
+
+<h1 align="center"> WHAT I CAN DO ELSE FOR YOUR COMPANY !</h1> <br>
+
+<!--Carousel Wrapper-->
+<div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+  <!--Controls-->
+  <div class="controls-top">
+    <a class="btn-floating" href="#multi-item-example" data-slide="prev">
+        <i class="fas fa-chevron-left"></i></a>
+    <a class="btn-floating" href="#multi-item-example" data-slide="next">
+        <i class="fas fa-chevron-right"></i></a>
+  </div>
+  <!--/.Controls-->
+
+  <!--Indicators-->
+  <ol class="carousel-indicators">
+    <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+    <li data-target="#multi-item-example" data-slide-to="1"></li>
+    <li data-target="#multi-item-example" data-slide-to="2"></li>
+  </ol>
+  <!--/.Indicators-->
+
+  <!--Slides-->
+  <div class="carousel-inner" role="listbox">
+
+    <!--First slide-->
+    <div class="carousel-item active">
+
+      <div class="col-md-4">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="~/images/WorkFlow2.png" height=250px; width=200;
+            alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Data Mining Work Flow</h4>
+            <p class="card-text"> Pour chaque projet Data, je
+                modelise les différents étapes du projet. Cela permet d'avoir une 
+                vision global du projet, les outils et méthodes à utiliser et facilite le travail.
+            </p>
+            <a class="btn btn-default" href="https://www.youracclaim.com/users/aboubakar-ahamada/badges" target="_blank">
+              En savoir plus</a>          
+            </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="~/images/RF_OOB_v20.png" height=250px; width=200;
+            alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Machine Learning</h4>
+            <p class="card-text">Le random forest (RF) est l'une des algorithmes du Machine Learning
+              que j'ai travaillé durant mon stage. Le OOB est une méthode ustilsé dans le RF pour
+              estimer l'erreur de prédiction.
+            </p>
+            <a class="btn btn-default" href="https://www.youracclaim.com/users/aboubakar-ahamada/badges" target="_blank">
+            En savoir plus</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="~/images/afc_viz.png" height=250px; width=200;
+            alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Data Viz</h4>
+            <p class="card-text">Savoir faire
+              parler les données, c'est la clé de la reussite. Avec la Data Viz je fais parler 
+              les données pour aider les décideurs 
+              dans la prise des décisions.
+            </p>
+            <a class="btn btn-default" href="https://www.youracclaim.com/users/aboubakar-ahamada/badges" target="_blank">
+            En savoir plus </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!--/.First slide-->
+
+    <!--Second slide-->
+    <div class="carousel-item">
+
+      <div class="col-md-4">
+        <div class="card mb-2">
+          <img class="card-img-top" 
+            src="~/images/bookstore1.png" height=250px; width=200;
+            alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Java/JEE</h4>
+            <p class="card-text">Le Java est l'une
+              des mes langages de programmation preférés que je me sens à l'aise. Sevlet, JSP,
+               JDBC, Maven, Hibernate, Spring, Spring Boot, je m'y forme continuellement.
+            </p>
+            <a class="btn btn-default" href="https://github.com/AboubakarAhamada?tab=repositories" target="_blank">
+            En savoir plus</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="~/images/razor.png" height=250px; width=200;
+            alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">C#/Dot.Net</h4>
+            <p class="card-text">Avec l'arrivée du Dot.Net Core, j'ai décidé de me lancer dans cette
+              technologie pleine d'avenir. Je me forme sur les pages razor, Entity Framwork et SQLite pour 
+              créer des applications.
+            </p>
+            <a class="btn btn-default" href="https://github.com/AboubakarAhamada?tab=repositories" target="_blank">
+            En savoir plus</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="~/images/m2i.png" height=250px; width=200;
+            alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Responsive Design</h4>
+            <p class="card-text">Je conçois
+              des interfaces qui s'adaptent aux différents terminaux : ordinateurs, smartphones
+              et tablettes. Pour que les utilisateurs se sentent à l'aise.
+              </p>
+              <a class="btn btn-default" href="https://github.com/AboubakarAhamada?tab=repositories" target="_blank">
+            En savoir plus</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!--/.Second slide-->
+
+  </div>
+  <!--/.Slides-->
+
+</div>
+<!--/.Carousel Wrapper-->
+

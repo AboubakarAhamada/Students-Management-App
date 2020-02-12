@@ -1,0 +1,79 @@
+﻿@page
+@model LastApp.Pages.ContactModel
+@{
+    ViewData["Title"]="Contact";
+}
+
+   </br><h1 align="center"> Feel free to contact me, it will be a pleasure.</h1> </br>
+
+<div class="row">
+
+<div class="col-sm-6">
+<form method="post">
+  Votre mail : <input type="text" asp-for="mail.From" size="50" /></br>
+  Envoyer à : <input type="text" asp-for="mail.To" value= "abou.ahamada269@gmail.com" size="50" /> </br>
+  Objet : <input type="text" asp-for="mail.Subject" size="50"/> </br>
+  Votre message : <textarea asp-for="mail.Body" size="50"> </textarea> </br>
+  <input type="submit"class="btn btn-success" />  &nbsp; <input type="reset" class="btn btn-primary"/>
+</form>
+</div>
+
+<div class="col-sm-1"></div> <!-- colonne vide-->
+
+<div class="col-sm-5">
+
+<!--The div element for the map -->
+<div id="map"></div>
+<!-- Replace the value of the key parameter with your own API key. -->
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPXZLifYU8SiB5kNNe3YBMo7UxsfCnsF4&callback=initMap">
+</script>
+
+<script>
+  // Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  var casa = {lat: 33.5731, lng: 7.5898 };
+  // The map, centered at Casablanca
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: casa});
+  // The marker, positioned at Casablanca
+  var marker = new google.maps.Marker({position: casa, map: map});
+}
+</script>
+
+<style>
+  /* Set the size of the div element that contains the map */
+#map {
+  height: 400px;  /* The height is 400 pixels */
+  width: 100%;  /* The width is the width of the web page */
+ }
+</style>
+</div>
+
+<!--- =========== CSS SECTION ================ -->
+
+<style>
+    /* Style inputs with type="text", select elements and textareas */
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    /* Full width */
+    padding: 10px;
+    /* Some padding */
+    border: 1px solid #ccc;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical/* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+</style>
